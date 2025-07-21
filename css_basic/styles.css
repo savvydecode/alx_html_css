@@ -16,6 +16,19 @@ main{
 article{
     flex: 2;
     overflow-y: auto;
+    border: 2px solid black;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background: rgb(242, 243, 249);
+}
+
+article img{
+    border-radius: 50%;
+    height: min(400px, 70vw);
+    margin: 0.5rem auto;
+    padding:auto o.5rem;
+    border: 6px double black;
 }
 
 aside{
