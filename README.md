@@ -35,3 +35,13 @@ Finally, you want to be sure that the user can scroll within your <article> and 
 If you’ve done all of those properly, and your HTML structure is correct, you should get exactly the layout we were trying to get.
 
 Do note that the exact rendering you’re getting may be slightly different depending on your browser (namely, about whether header and footer are fixed or not when the user scrolls), but should always match the layout presented above.
+
+
+2. RESPOSIVE WEB DESIGN
+You may notice that the website keeps this layout when you make your browser window smaller, or visit it from a smartphone, and it’s unpleasant to use that way for your users. No worries, we covered this for you: just add the attribute class="works_on_smartphone" on the <body> tag in your index.html file, and the layout you just created will degrade nicely as you resize the window!
+
+But you’ll notice, if you visit your website on a smartphone, that it will still have that layout, and just seem “zoomed out”. That’s because you need to adjust what is called the “viewport” of the browser when rendering the page.
+
+Hint: this gets done by adding a certain tag to your HTML code.
+
+NB: Do well to thoroughly go through the base css file that was provided to you to understand exactly which styles produces which result.
