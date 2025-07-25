@@ -3,25 +3,26 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="/css_advanced/assets/images/logo.png" type="image/x-icon">
-        
+        <link
+            rel="shortcut icon"
+            href="/css_advanced/assets/images/logo.png"
+            type="image/x-icon"
+        />
+
         <script
             src="https://kit.fontawesome.com/4a2b055604.js"
             crossorigin="anonymous"
         ></script>
         <title>Smile School WebProject</title>
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
         <header>
             <nav>
-                <img
-                    src="./assets/images/smileLogo.png"
-                    alt="logo"
-                />
+                <img src="./assets/images/smileLogo.png" alt="logo" />
 
                 <ul>
-                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">COURSES</a></li>
                     <li><a href="#">PRICING</a></li>
                     <li><a href="#">LOGIN</a></li>
                 </ul>
@@ -31,42 +32,75 @@
             <section class="main-part">
                 <div>
                     <h1>Get schooled</h1>
-                    <span>SMILES</span>
-                    <span>GRIN</span>
-                    <span>LAUGH</span>
+                    <div>
+                        <span class="facal-styles">SMILES</span>
+                        <span class="facal-styles">GRIN</span>
+                        <span class="facal-styles">LAUGH</span>
+                    </div>
                     <button>REGISTER FOR FREE</button>
                 </div>
                 <div>
-                    <h2>Learn from the pros</h2>
-                    <div>
-                        <div>
-                            <img src="./assets/images/pro1.png" alt="image of Phillip Massey" loading="lazy" title="Phillip Massey" />
-                            <h3>Phillip Massey</h3>
-                            <p>« Smile of the year » 2018 - 2019</p>
+                    <h2><span id="learn1">Learn</span> <span id="learn2">from the pros</span></h2>
+                    <div class="pros-group">
+                        <div class="pros">
+                            <img
+                                src="./assets/images/pro1.png"
+                                alt="image of Phillip Massey"
+                                loading="lazy"
+                                title="Phillip Massey"
+                            />
+                            <h3 class="pros-name">Phillip Massey</h3>
+                            <p class="pros-itl">« Smile of the year »</p>
+                            <p class="pros-itl"> 2018 - 2019</p>
                         </div>
-                        <div>
-                            <img src="./assets/images/pro2.png" alt="Image of Nannie Lawrence" title="Nannie Lawrence" loading="lazy" />
-                            <h3>Nannie Lawrence</h3>
-                            <p>Best « little smile » 2017</p>
+                        <div class="pros">
+                            <img
+                                src="./assets/images/pro2.png"
+                                alt="Image of Nannie Lawrence"
+                                title="Nannie Lawrence"
+                                loading="lazy"
+                            />
+                            <h3 class="pros-name">Nannie Lawrence</h3>
+                            <p class="pros-itl">Best « little smile »</p>
+                            <p class="pros-itl">2017</p>
                         </div>
-                        <div>
-                            <img src="./assets/images/pro3.png" alt="Image of Bruce Walters" title="Bruce Walters" loading="lazy" />
-                            <h3>Bruce Walters</h3>
-                            <p>Best « Friend Smile » live performance 2019</p>
+                        <div class="pros">
+                            <img
+                                src="./assets/images/pro3.png"
+                                alt="Image of Bruce Walters"
+                                title="Bruce Walters"
+                                loading="lazy"
+                            />
+                            <h3 class="pros-name">Bruce Walters</h3>
+                            <p class="pros-itl">Best « Friend Smile »</p>
+                            <p class="pros-itl">live performance 2019</p>
                         </div>
-                        <div>
-                            <img src="./assets/images/pro4.png" alt="Image of Henry Hughes" title="Henry Hughes" loading="lazy" />
-                            <h3>Henry Hughes</h3>
-                            <p>« 24h smiles » winner 2016 - 2019</p>
+                        <div class="pros">
+                            <img
+                                src="./assets/images/pro4.png"
+                                alt="Image of Henry Hughes"
+                                title="Henry Hughes"
+                                loading="lazy"
+                            />
+                            <h3 class="pros-name">Henry Hughes</h3>
+                            <p class="pros-itl">« 24h smiles »</p>
+                            <p class="pros-itl">winner 2016 - 2019</p>
                         </div>
                     </div>
                 </div>
+                <div id="extend"></div>
             </section>
-            <section class="part-1-testimonials">
+
+            <section id="part-1-testimonials">
                 <div>
-                    <img src="./assets/images/weatherPresenter.png" alt="image of a weather presenter"  title="weather presetenter"  loading="lazy"/>
+                    <img
+                        src="./assets/images/weatherPresenter.png"
+                        alt="image of a weather presenter"
+                        title="weather presetenter"
+                        loading="lazy"
+                    />
                 </div>
-                <div>
+                <div id="testimonials-content">
                     <blockquote>
                         « Those tutorials are concise and go straight to the
                         point. I can’t think of a better place to learn smiling.
@@ -261,10 +295,7 @@
         <footer>
             <section class="part-5-footer">
                 <div>
-                    <img
-                        src="./assets/images/smileLogo.png"
-                        alt="logo"
-                    />
+                    <img src="./assets/images/smileLogo.png" alt="logo" />
                     <div>
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-twitter"></i>
