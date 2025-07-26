@@ -28,11 +28,20 @@ background-blend-mode: normal, color; */
 }
 
 
+/* DECLARE GLOBAL CSS CLASSES */
+.bold{
+    font-weight: bolder;
+    color:#C271FF;
+}
+.light{
+    font-weight: lighter;
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: 1.5px;
 }
 body {
     font-family: "source_sans_proregular";
@@ -41,6 +50,7 @@ body {
 
 /* STYLING THE HEADER SECTION */
 header{
+    letter-spacing: 1.5px;
     position:absolute;
     display: flex;
     justify-content: space-around;
@@ -114,7 +124,8 @@ nav a:active{
 /* THE MAIN PART CONTAINS BACKGROUND RADIAL GRADIANT AND AN IMAGE 
 THE IMAGE IS APPLIED USING THE ::BEFORE PSEUDO ELEMENT SO THAT ITS GRAY SCALE EFFECT WILL NOT AFFECT THE COLOR OF THE RADIAL GRADIENT. */
 
-.main-part {
+#main-part {
+    letter-spacing: 1.5px;
     position: relative; /* Ensure the pseudo-element is positioned correctly */
     background: radial-gradient(86% 86% at 50% 14%, rgba(41, 48, 61, 0.1) 0%, #071629 100%);
     background-blend-mode: normal, color;
@@ -128,7 +139,7 @@ THE IMAGE IS APPLIED USING THE ::BEFORE PSEUDO ELEMENT SO THAT ITS GRAY SCALE EF
 }
 
 /* USE ::BEFORE TO INSERT THE IMAGE THEN z-index: -1, TO PUSH IT BEIND THE RADIAL GRADIENT */
-.main-part::before {
+#main-part::before {
     content: "";
     position: absolute;
     top: 0;
@@ -144,7 +155,7 @@ THE IMAGE IS APPLIED USING THE ::BEFORE PSEUDO ELEMENT SO THAT ITS GRAY SCALE EF
 }
 
 /*THE ::after ADD A HEIGHT IS DISPLAYED AT THE 5REM SPACE BELOW THE LOWER PORTIION OF THE IMAGE. TO ALOW SEAMLESS BLEND OF THE RADIAL GRADIENT INTO THE BACKGROUND.*/
-.main-part::after {
+#main-part::after {
     content: "";
     position: absolute;
     left: 0;
@@ -156,7 +167,7 @@ THE IMAGE IS APPLIED USING THE ::BEFORE PSEUDO ELEMENT SO THAT ITS GRAY SCALE EF
 }
 
 
-.main-part img{
+#main-part img{
     width: 150px;
     height: auto;
     border-radius: 50%;
@@ -200,11 +211,15 @@ main > section > div > h1 + div + button{
     padding: 0 1.5rem;
 }
 
+#learn{
+    font-size: 32px;
+    color: white;
+}
 
-#learn1{
+/* #learn1{
     font-weight: bolder;
     color: #C271FF;
-    font-size: 32px;
+    f
 ;
 }
 
@@ -213,7 +228,7 @@ main > section > div > h1 + div + button{
     color: white;
     font-weight: lighter;
 }
-
+ */
 
 
 .pros-group{
@@ -254,6 +269,7 @@ main > section > div > h1 + div + button{
 
 /* styling the #part-1-testimonials section */
 #part-1-testimonials{
+    letter-spacing: normal;
     height: 392px;
     width: 100%;
     background-color: #C271FF;
@@ -281,6 +297,7 @@ main > section > div > h1 + div + button{
     flex-wrap: wrap;
 
 
+
 }
 
 #testimonials-content h3{
@@ -294,8 +311,111 @@ main > section > div > h1 + div + button{
 }
 
 
+/*STYLING THE TUTORIALS SECTOIN*/
+
+#part-2-tutorials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#part-2-tutorials h2{
+    font-size: 32px;
+    padding:5rem 0;
+}
 
 
+#tutorials-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
 
+.tutorial-card {
+    position: relative;
+    border: 1px solid rgb(233, 232, 232);
+    border-radius: 5px;
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.tutorial-card > img{
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+
+.tutorial-card::after {
+    content: "";
+    position: absolute;
+    transform: translate(150%, -150%); /* Center the overlay */
+    width: 64px; /* Adjust the size of the overlay as needed */
+    height: 64px; /* Adjust the size of the overlay as needed */
+    background-image: url('/css_advanced/assets/images/preview.png');
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensure the overlay image fits within the specified dimensions */
+    pointer-events: none;
+    z-index: 1;
+}
+
+.tutorial-card-content{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+}
+
+.tutorial-card-content h3{
+    letter-spacing: unset;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+.tutorial-card-content > h3 + p{
+    color: #071629;
+}
+
+
+.small-card-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+.small-card-image img{
+    padding: 1rem 0;
+    width: 30px;   
+    height: auto;
+    border-radius: 50%;
+}
+
+.small-card-image h4{
+    color:#C271FF;
+}
+
+.tutorial-card-footer{
+    color:#C271FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:4rem;
+}
+.tutorial-stars{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+.tutorial-stars > div:last-child{
+    color: #979797;
+}
 
 
