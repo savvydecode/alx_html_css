@@ -436,7 +436,6 @@ main > section > div > h1 + div {
     padding: 1.5rem;
     gap: 1rem;
     width: 257px;
-
 }
 .membership-card::after {
     position: absolute;
@@ -450,22 +449,70 @@ main > section > div > h1 + div {
     opacity: 1;
 }
 
-
 .membership-card img {
     width: 44px;
     height: 35px;
 }
 
-.membership-card h3{
+.membership-card h3 {
     font-size: 18px;
 }
 
-.membership-card p{
+.membership-card p {
     font-size: 14px;
     text-align: center;
     line-height: 1.5rem;
 }
 
-#register-btn-2{
-    margin:0;
+#register-btn-2 {
+    margin: 0;
+}
+
+/* STYLE THE FAQ SECTION */
+
+.part-4-faq {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.part-4-faq h2 {
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+#faq-container {
+    padding-top: 3rem;
+    column-count: 2;
+    column-width: 350px;
+    column-gap: 15rem;
+}
+
+
+.faq-item{
+    padding:1rem 0 2rem 0;
+    width: 350px;
+}
+
+.faq-item h3{
+    font-size: 16px;
+    color:#071629
+}
+
+.faq-item div{
+    padding: 1rem;
+    font-size: 14px;
+    line-height: 1.2rem;
+    color:#979797
+}
+
+/* style the footer section */
+
+footer{
+    height:250px;
+    width: 100%;
+    background-color: #071629;
+    color: white;
 }
