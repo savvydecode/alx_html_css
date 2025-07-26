@@ -516,3 +516,48 @@ footer{
     background-color: #071629;
     color: white;
 }
+
+footer img{
+    width: 170px;
+
+}
+
+.part-5-footer{
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 45rem;
+}
+
+
+.footer-container > div{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-right: 2rem;
+}
+
+.footer-container i{
+    padding: 0.5rem;
+    background-color: white;
+    color:#071629;
+    border-radius: 50%;
+}
+
+footer p{
+
+    font-size: 12px;
+    padding-top: 4rem;
+
+    color:#979797;
+}
