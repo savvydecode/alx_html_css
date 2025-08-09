@@ -1,3 +1,4 @@
+
 /* 
 background: radial-gradient(85.9% 85.9% at 50% 14.1%, rgba(41, 48, 61, 0.0001) 0%, #071629 100%), #000000;
 background-blend-mode: normal, color; */
@@ -69,9 +70,11 @@ background-blend-mode: normal, color; */
 
 .main-description {
 	letter-spacing: normal;
+	line-height: 1.5rem;
 	color: white;
 	font-size: 16px;
-    width: 637px;
+	width: clamp(500px, 637px, 100%);
+	padding: 0 1rem;
 	font-weight: normal;
 	text-align: center;
 }
@@ -95,7 +98,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	gap: 15rem;
+	gap: 12rem;
 	align-items: center;
 	margin: 1rem auto;
 	width: 90%;
@@ -104,11 +107,10 @@ nav {
 nav img {
 	width: auto;
 	height: 2rem;
-	padding-left: 3rem;
 }
 
 nav li {
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 }
 
 ul {
@@ -150,6 +152,8 @@ nav a:active {
 	position: relative;
 	background-image: url(/headphones/assets/images/headphones_hero_1.jpg);
 	background-blend-mode: normal, color;
+	background-size: cover;
+	background-position: center;
 	padding-top: 10rem;
 	display: flex;
 	flex-direction: column;
@@ -163,6 +167,7 @@ main > section > div {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 main > section > div > h1 {
 	margin-top: 13rem;
@@ -190,7 +195,7 @@ main > section > div > h1 + p {
 /* styling the #WHAT WE DO ... SECTION */
 #what-we-do {
 	letter-spacing: normal;
-	height: 650px;
+	height: auto;
 	width: 100%;
 	background-color: white;
 	display: flex;
@@ -201,100 +206,209 @@ main > section > div > h1 + p {
 	padding: 0 5rem;
 }
 
+#what-we-do h2 {
+	font: 32px;
+	margin-top: 5rem;
+}
 #what-we-do > div > .second-description {
-    color: black;
-    letter-spacing: normal;
+	letter-spacing: normal;
+	line-height: 1.5rem;
+	color: black;
+	letter-spacing: normal;
 	font-size: 16px;
 	font-weight: normal;
-	width: 637px;
+	width: clamp(500px, 637px, 100%);
+	padding: 0 1rem;
 	text-align: center;
-    margin-top: 10rem;
+	margin-top: 5rem;
 }
 
-#what-we-do .card-container{
-    margin-top: 7rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 3rem;
-    padding: 3rem 0;
-    width: 1002px;
-    height: 193px;
-}
-
-#what-we-do .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: px;
-    width: 207px;
-    gap: 3rem;
-}
-
-#what-we-do .card img {
-    width: 4rem;
-}
-
-#what-we-do .card p {
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.5rem;
-    color: 071629;
-}
-
-
-
-/* style the footer section */
-/* 
-footer {
-	height: 250px;
-	width: 100%;
-	background-color: #071629;
-	color: white;
-}
-
-footer img {
-	width: 170px;
-}
-
-.part-5-footer {
-	padding-top: 6rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
-
-.footer-container {
+#what-we-do .card-container {
+	margin-top: 7rem;
+	margin-bottom: 5rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-	gap: 45rem;
+	gap: clamp(0rem, 2rem, 4rem);
+	padding: 3rem 0.5rem;
+	width: 98vw;
+	height: 193px;
 }
 
-.footer-container > div {
+#what-we-do .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 207px;
+	gap: 3rem;
+}
+
+#what-we-do .card img {
+	width: 4rem;
+}
+
+#what-we-do .card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+#what-we-do .card p {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.5rem;
+	color: 071629;
+}
+
+/* STYLING THE OUR RESULT SESSION */
+
+#our-results {
+	color: white;
+	width: 100%;
+	background-color: #071629;
+	background-image: url("/headphones/assets/images/headphones_hero_2.jpg");
+	background-size: cover;
+	background-position: center;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.results-container {
+	height: auto;
+	width: 100%;
+	margin-bottom: 2rem;
+}
+#our-results > div > h2 {
+	margin-top: 7rem;
+}
+
+#our-results > div > .third-description {
+	letter-spacing: normal;
+	line-height: 1.5rem;
+	font-size: 16px;
+	font-weight: normal;
+	width: clamp(500px, 637px, 100%);
+	padding: 0 1rem;
+	text-align: center;
+	margin-top: 5rem;
+}
+
+.percent-container {
 	display: flex;
 	flex-direction: row;
-	gap: 1.5rem;
-	padding-right: 2rem;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: clamp(2rem, 5vw, 7rem);
+	padding: 3rem 1rem;
+	width: 100%;
 }
 
-.footer-container i {
-	padding: 0.5rem;
-	background-color: white;
-	color: #071629;
-	border-radius: 50%;
+.percent-card {
+	color: white;
+	text-align: center;
+	background: url("/headphones/assets/images/pentagone.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 190px;
+	width: 190px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-footer p {
-	font-size: 12px;
-	padding-top: 4rem;
-
-	color: #979797;
+.percent-card h2 {
+	font-size: 46px;
+	font-weight: bold;
+	margin: 0;
 }
- */
+
+.percent-card p {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/*MAKING IT RESPONSIVE*/
+@media screen and (max-width: 768px) {
+	nav {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	nav li {
+		padding: 0.5rem;
+	}
+
+	li a {
+		padding: 0;
+	}
+	main > section > div > h1 {
+		text-align: center;
+	}
+	main > section > div > h1 + p {
+		text-align: center;
+	}
+
+	#what-we-do {
+		height: auto;
+		flex-direction: column;
+		align-items: center;
+	}
+	#what-we-do .card-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		height: auto;
+		padding-left: 3rem;
+		padding-right: 3rem;
+		gap: 3rem;
+		width: 95vw;
+	}
+
+	.percent-container {
+		flex-wrap: wrap;
+		gap: 5rem;
+	}
+
+	#main-part{
+		background-position-x: 40%
+	}
+
+	.main-description,
+	#our-results > div > .third-description,
+	#what-we-do > div > .second-description {
+		width: clamp(400px, 637px, 100%);
+	}
+
+	.footer-container {
+		gap: clamp(2rem, 35vw, 100%);
+	}
+}
+
+@media screen and (max-width: 500px) {
+	nav ul li {
+		display: none;
+	}
+	.main-description,
+	#our-results > div > .third-description,
+	#what-we-do > div > .second-description {
+		width: clamp(400px, 637px, 100%);
+	}
+
+	.footer-container {
+		flex-direction: column;
+		gap: 3rem;
+	}
+}
